@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2ebe6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 60%;
+      max-width: 1200px;
+      display: flex;
+      background-color: white;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .text-section {
+      width: 50%;
+      padding: 40px;
+      background-color: #fdfcfb;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo svg {
+      margin-right: 5px; /* Adjust this value to control the space */
+    }
+    .logo span {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 3rem;
+      line-height: 1.2;
+      margin: 40px 0 20px;
+      color: #333;
+    }
+    h1 span {
+      display: block;
+      font-weight: 300;
+      color: #d1a7a7;
+    }
+    p {
+      font-size: 1rem;
+      color: #7d7d7d;
+      line-height: 1.6;
+    }
+    .email-form {
+      display: flex;
+      margin-top: 20px;
+    }
+    .email-form input {
+      width: 70%;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 25px 0 0 25px;
+      font-size: 1rem;
+      outline: none;
+    }
+    .email-form button {
+      background-color: #ee8b8b;
+      color: white;
+      border: none;
+      border-radius: 0 25px 25px 0;
+      padding: 15px 30px;
+      cursor: pointer;
+    }
+    .email-form input::placeholder {
+      color: #999;
+    }
+    .email-form input:focus {
+      border-color: #ee8b8b;
+    }
+    .image-section {
+      width: 50%;
+    }
+    .image-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="container">
+
+    <!-- Text Section -->
+    <div class="text-section">
+        <div class="logo">
+            <!-- SVG Logo -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="158" height="33">
+                <defs>
+                    <linearGradient id="a" x1="0%" y1="0%" y2="100%">
+                        <stop offset="0%" stop-color="#F8BFBF"/>
+                        <stop offset="100%" stop-color="#EE8B8B"/>
+                    </linearGradient>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                    <path fill="#423A3A" fill-rule="nonzero" d="M53.699 10.2c0 .571-.11 1.071-.33 1.5-.221.428-.537.786-.947 1.071..."></path>
+                    <path fill="url(#a)" d="M15.5 32.088c-8.56 0-15.5-6.94-15.5-15.5 0-8.56 6.94-15.5 15.5-15.5 8.56 0 15.5 6.94 15.5 15.5 0 8.56-6.94 15.5-15.5 15.5zm0-3.5c6.904 0 12.5-5.373 12.5-12s-5.596-12-12.5-12S3 9.961 3 16.588s5.596 12 12.5 12z"></path>
+                </g>
+            </svg>
+            <!-- Logo Text -->
+            <span>BASE APPAREL</span>
+        </div>
+
+        <!-- Page Header and Form -->
+        <h1><span>We're</span> COMING SOON</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <form class="email-form">
+            <input type="email" placeholder="Email Address" required>
+            <button type="submit">→</button>
+        </form>
+    </div>
+
+    <!-- Image Section -->
+    <div class="image-section">
+        <img src="./images/hero-desktop.jpg" alt="Coming Soon Image">
+    </div>
+  </div>
+</body>
+</html>
